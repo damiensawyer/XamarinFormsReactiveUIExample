@@ -7,7 +7,6 @@ x:Class="XamarinFormsReactiveUIExample.MyPage"
 xmlns:local="clr-namespace:XamarinFormsReactiveUIExample;assembly=XamarinFormsReactiveUIExample"
 xmlns:reactive="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms"
 >
-<!--Note that, for Android, the assembly is named reactiveui-xamforms instead of ReactiveUI.XamForms -->
     <reactive:ReactiveContentPage.BindingContext>
       <local:MyPageModel />
     </reactive:ReactiveContentPage.BindingContext>
