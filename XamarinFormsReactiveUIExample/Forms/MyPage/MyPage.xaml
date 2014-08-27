@@ -5,26 +5,20 @@ xmlns="http://xamarin.com/schemas/2014/forms"
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 x:Class="XamarinFormsReactiveUIExample.MyPage"
 xmlns:local="clr-namespace:XamarinFormsReactiveUIExample;assembly=XamarinFormsReactiveUIExample"
-xmlns:reactive="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms"
->
+xmlns:reactive="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms">
     <reactive:ReactiveContentPage.BindingContext>
       <local:MyPageModel />
     </reactive:ReactiveContentPage.BindingContext>
 
-       	 <reactive:ReactiveContentPage.Padding>
-   		 <OnPlatform x:TypeArguments="Thickness"
+     <reactive:ReactiveContentPage.Padding>
+   	 <OnPlatform x:TypeArguments="Thickness"
                 iOS="0, 150, 0, 0" />
  	 </reactive:ReactiveContentPage.Padding>
 
 	<reactive:ReactiveContentPage.Content>
-
-
-
-	<StackLayout>
-
-	<Entry Text = "{Binding UserName}"></Entry>
-	<Label Text = "{Binding UserName}"></Label>
-
-	</StackLayout>
+		<StackLayout>
+			<Entry Text = "{Binding UserName}"></Entry>
+			<Label Text = "{Binding UserName}"></Label>
+		</StackLayout>
 	</reactive:ReactiveContentPage.Content>
 </reactive:ReactiveContentPage>
