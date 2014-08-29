@@ -6,12 +6,12 @@ using ReactiveUI.XamForms;
 
 namespace XamarinFormsReactiveUIExample
 {
-	public partial class MyPage : ReactiveContentPage<MyPageModel>
+	public partial class HelloWorldPage : ReactiveContentPage<HelloWorldPageModel>
 	{
-		public MyPage ()
+		public HelloWorldPage ()
 		{
 			InitializeComponent ();
-			this.ViewModel = new MyPageModel ();
+			this.ViewModel = new HelloWorldPageModel();
 
 			this.Bind (ViewModel, vm => vm.UserName, v => v.userNameEntry.Text);
 			this.OneWayBind (ViewModel, vm => vm.UserName, v => v.userNameLabel.Text);

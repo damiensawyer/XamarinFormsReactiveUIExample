@@ -3,7 +3,7 @@ using ReactiveUI;
 
 namespace XamarinFormsReactiveUIExample
 {
-	public class MyPageModel : ReactiveObject
+	public class ListViewPageModel : ReactiveObject
 	{
 		private string _userName = "";
 

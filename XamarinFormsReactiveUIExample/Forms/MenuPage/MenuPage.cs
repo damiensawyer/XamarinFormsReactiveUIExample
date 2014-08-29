@@ -10,6 +10,7 @@ namespace FormsGallery
     {
         public MenuPage()
         {
+            // Yoinked this from the Xamarin Forms Samples
             // Define command for the items in the TableView.
             Command<Type> navigateCommand =
                 new Command<Type>(async (Type pageType) =>
@@ -56,7 +57,13 @@ namespace FormsGallery
                         {
                             Text = "Simple Entry to Label Binding",
                             Command = navigateCommand,
-                            CommandParameter = typeof (MyPage)
+                            CommandParameter = typeof (HelloWorldPage)
+                        },
+                        new TextCell
+                        {
+                            Text = "Intro to ListView",
+                            Command = navigateCommand,
+                            CommandParameter = typeof (ListViewPage)
                         },
                     },
                 }
