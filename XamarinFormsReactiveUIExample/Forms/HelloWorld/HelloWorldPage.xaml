@@ -12,7 +12,7 @@ xmlns:reactive="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms">
 
      <reactive:ReactiveContentPage.Padding>
    	 <OnPlatform x:TypeArguments="Thickness"
-                iOS="0, 150, 0, 0" />
+                iOS="0, 20, 0, 0" />
  	 </reactive:ReactiveContentPage.Padding>
 
 	<reactive:ReactiveContentPage.Content>

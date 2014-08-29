@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ReactiveUI;
 using ReactiveUI.XamForms;
 
 namespace XamarinFormsReactiveUIExample
@@ -11,7 +12,13 @@ namespace XamarinFormsReactiveUIExample
     {
         public ListViewPage()
         {
-            //InitializeComponent();
+            InitializeComponent();
+            this.ViewModel = new ListViewPageModel();
+
+            this.myCollection.ItemsSource = this.ViewModel.myCollection;
+            this.BindCommand(ViewModel, x => x.Add, v => v.add);
+            this.BindCommand(ViewModel, x => x.Remove, v => v.remove);
+            //this.OneWayBind(ViewModel, vm => vm.myCollection, v => v.myCollection.ItemsSource);
         }
     }
 }

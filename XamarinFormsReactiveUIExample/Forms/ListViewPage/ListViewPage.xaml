@@ -12,12 +12,23 @@ xmlns:reactive="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms">
 
   <reactive:ReactiveContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness"
-               iOS="0, 150, 0, 0" />
+               iOS="0, 20, 0, 0" />
   </reactive:ReactiveContentPage.Padding>
 
-  <reactive:ReactiveContentPage.Content>
-    <StackLayout>
-      
-    </StackLayout>
-  </reactive:ReactiveContentPage.Content>
+
+  <StackLayout>
+    <Button x:Name="add" Text ="Add"/>
+    <Button x:Name="remove" Text ="Remove"/>
+    <ListView x:Name="myCollection">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal" Padding="20, 5, 20, 5">
+              <Label Text="{Binding .}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" />
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
 </reactive:ReactiveContentPage>
