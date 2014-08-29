@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsReactiveUIExample", "XamarinFormsReactiveUIExample\XamarinFormsReactiveUIExample.csproj", "{60FAB4BB-29B6-4D82-AE05-2D6889796159}"
@@ -98,10 +98,10 @@ Global
 		{F0A0838C-ECF5-4E90-8BC8-0287C55C96F9}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{F0A0838C-ECF5-4E90-8BC8-0287C55C96F9}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Android\XamarinFormsReactiveUIExample.Android.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

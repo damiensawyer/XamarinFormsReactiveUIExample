@@ -11,6 +11,11 @@ namespace XamarinFormsReactiveUIExample
 		public MyPage ()
 		{
 			InitializeComponent ();
+			this.ViewModel = new MyPageModel ();
+
+			this.Bind (ViewModel, vm => vm.UserName, v => v.userNameEntry.Text);
+			this.OneWayBind (ViewModel, vm => vm.UserName, v => v.userNameLabel.Text);
+
 		}
 	}
 }

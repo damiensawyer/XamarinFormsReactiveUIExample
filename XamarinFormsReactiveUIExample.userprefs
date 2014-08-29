@@ -1,8 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinFormsReactiveUIExample/Forms/MyPage/MyPageModel.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_15" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinFormsReactiveUIExample/Forms/MyPage/MyPage.xaml.cs">
     <Files>
-      <File FileName="XamarinFormsReactiveUIExample/Forms/MyPage/MyPageModel.cs" Line="4" Column="4" />
+      <File FileName="XamarinFormsReactiveUIExample/App.cs" Line="1" Column="1" />
+      <File FileName="XamarinFormsReactiveUIExample/Forms/MyPage/MyPageModel.cs" Line="1" Column="1" />
+      <File FileName="XamarinFormsReactiveUIExample/Forms/MyPage/MyPage.xaml" Line="45" Column="45" />
+      <File FileName="XamarinFormsReactiveUIExample/obj/Debug/MyPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="../teenstar/TeenStar/TeenStar/TeenStar.Android/Activities/LoginActivity.cs" Line="1" Column="1" />
+      <File FileName="../teenstar/TeenStar/TeenStar/TeenStar/Classes/ReactiveUIModels/ReactiveLoginModel.cs" Line="1" Column="1" />
+      <File FileName="XamarinFormsReactiveUIExample/Forms/MyPage/MyPage.xaml.cs" Line="19" Column="19" />
+      <File FileName="../teenstar/TeenStar/TeenStar/TeenStar.Android/Activities/BaseReactiveActivity.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -17,8 +17,8 @@ xmlns:reactive="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms">
 
 	<reactive:ReactiveContentPage.Content>
 		<StackLayout>
-			<Entry Text = "{Binding UserName}"></Entry>
-			<Label Text = "{Binding UserName}"></Label>
+			<Entry x:Name="userNameEntry"></Entry>
+			<Label x:Name="userNameLabel"></Label>
 		</StackLayout>
 	</reactive:ReactiveContentPage.Content>
 </reactive:ReactiveContentPage>
