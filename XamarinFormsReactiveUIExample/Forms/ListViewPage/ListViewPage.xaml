@@ -19,12 +19,16 @@ xmlns:reactive="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms">
   <StackLayout>
     <Button x:Name="add" Text ="Add"/>
     <Button x:Name="remove" Text ="Remove"/>
+    <Button x:Name="add100" Text ="Add 100"/>
     <ListView x:Name="myCollection">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
             <StackLayout Orientation="Horizontal" Padding="20, 5, 20, 5">
-              <Label Text="{Binding .}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" />
+              <!--<Label Text="{Binding .}"/>  I think in XAML that the . might mean current object -->
+              <Label Text="{Binding Index}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" />
+              <Label Text="{Binding Name}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" />
+
             </StackLayout>
           </ViewCell>
         </DataTemplate>
