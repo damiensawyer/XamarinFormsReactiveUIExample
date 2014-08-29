@@ -1,4 +1,5 @@
 ﻿using System;
+using FormsGallery;
 using Xamarin.Forms;
 
 namespace XamarinFormsReactiveUIExample
@@ -7,7 +8,7 @@ namespace XamarinFormsReactiveUIExample
 	{
 		public static Page GetMainPage ()
 		{	
-			return new MyPage ();
+			return new NavigationPage(new MenuPage());
 		}
 	}
 }

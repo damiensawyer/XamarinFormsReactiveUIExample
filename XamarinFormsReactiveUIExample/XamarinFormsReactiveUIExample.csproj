@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Forms\MenuPage\MenuPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\MyPage\MyPageModel.cs" />
     <Compile Include="Forms\MyPage\MyPage.xaml.cs">
@@ -74,10 +75,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\" />
-    <Folder Include="Forms\MyPage\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Forms\MyPage\MyPage.xaml">
       <Generator>MSBuild:Compile</Generator>
