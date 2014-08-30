@@ -40,6 +40,8 @@
       <DependentUpon>ListViewPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\MenuPage\MenuPage.cs" />
+    <Compile Include="Forms\PersonalProfilePage\PersonalProfileModel.cs" />
+    <Compile Include="Forms\PersonalProfilePage\PersonalProfilePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\HelloWorld\HelloWorldPageModel.cs" />
     <Compile Include="Forms\HelloWorld\HelloWorldPage.xaml.cs">
@@ -99,6 +101,12 @@
     <EmbeddedResource Include="Forms\FilteredListPage\FilteredListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\PersonalProfilePage\PersonalProfilePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -71,6 +71,12 @@ namespace FormsGallery
                             Command = navigateCommand,
                             CommandParameter = typeof (FilteredListPage)
                         },
+                        new TextCell
+                        {
+                            Text = "Form",
+                            Command = navigateCommand,
+                            CommandParameter = typeof (PersonalProfilePage)
+                        },
                     },
                 }
             };
