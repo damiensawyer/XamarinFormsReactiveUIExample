@@ -64,6 +64,12 @@ namespace FormsGallery
                             Text = "Intro to ListView",
                             Command = navigateCommand,
                             CommandParameter = typeof (ListViewPage)
+                        },      
+                        new TextCell
+                        {
+                            Text = "Filtered List",
+                            Command = navigateCommand,
+                            CommandParameter = typeof (FilteredListPage)
                         },
                     },
                 }

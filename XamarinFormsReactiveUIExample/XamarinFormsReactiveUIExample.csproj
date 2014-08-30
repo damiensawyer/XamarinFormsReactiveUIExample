@@ -31,6 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Forms\FilteredListPage\FilteredListPage.xaml.cs">
+      <DependentUpon>FilteredListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FilteredListPage\FilteredListPageModel.cs" />
     <Compile Include="Forms\ListViewPage\ListViewPageModel.cs" />
     <Compile Include="Forms\ListViewPage\ListViewPage.xaml.cs">
       <DependentUpon>ListViewPage.xaml</DependentUpon>
@@ -89,6 +93,12 @@
     <EmbeddedResource Include="Forms\HelloWorld\HelloWorldPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\FilteredListPage\FilteredListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>
